@@ -1,14 +1,16 @@
 .parallax {
-    background-image: url(The_Library.JPG);
+    background-image: url(yulogo.png), url(The_Library.JPG);
     background-attachment: fixed;
-    background-position: center;
+    background-position: center bottom, center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain, cover;
 
     min-height: 800px;
-    padding: 0px;
+    padding: 80px;
     margin: 0px;
-    filter: brightness(80%) saturate(90%) contrast(120%)
+    filter: brightness(80%) saturate(90%) contrast(150%);
+    display: block;
+    
 }
 
 #logomain {
@@ -20,9 +22,13 @@
     filter: saturate(180%)
 }
 
+.padding {
+    padding: 300px;
+}
 
 .gallery {
     text-align: center;
+    z-index: 2;
 }
 
 .scrollcontent {
@@ -87,6 +93,7 @@ body {
 
 .navigation{
     text-align: center;
+    z-index: 1;
 }
 
 .navigation li {
@@ -100,6 +107,12 @@ body {
     transition-property: all;
     transition-duration: .3s;
     transition-timing-function: linear;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
 }
 
 .tab:link {
