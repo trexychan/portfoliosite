@@ -13,6 +13,11 @@
     
 }
 
+#fademe {
+    opacity: 0;
+    transition: 1s;
+}
+
 #logomain {
     padding-top: 200px;
     display: block;
@@ -57,7 +62,7 @@ body {
     padding-bottom: 250px;
 }
 
-#abouth1 {
+.abouth1 {
     padding-top: 400px;
     padding-bottom: 300px;
     display: block;
