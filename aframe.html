@@ -4,16 +4,6 @@
         <title>A-Frame Project</title>
         <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
         <script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
-        <script>
-            AFRAME.registerComponent('play-music', {
-                init: function () {
-                    var bgAud = document.createElement("AUDIO");
-                    bgAud.src = "pureimagination.mp3";
-                    bgAud.load();
-                    bgAud.play();
-                }
-            });
-        </script>
     </head>
     <body>
         <a-assets>
@@ -36,7 +26,8 @@
             <a-image id="sky" src="assets/sky_003_s.jpg"></a-image>
             <a-image id="lake" src="assets/lakeside.jpg"></a-image>
         </a-assets>
-        <a-scene play-music background="color: #44f3ff">
+        <a-scene background="color: #44f3ff">
+            <a-sound src="src: url(assets/pureimagination.mp3)" autoplay="true" position="0 2 5" volume=".5"></a-sound>
             <a-camera>
                 <a-cursor color="white"></a-cursor>
             </a-camera>
