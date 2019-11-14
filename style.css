@@ -1,9 +1,9 @@
 .parallax {
-    background-image: url(yulogo.png), url(The_Library.JPG);
+    background-image: url(The_Library.JPG);
     background-attachment: fixed;
-    background-position: center bottom, center;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: contain, cover;
+    background-size: cover;
 
     min-height: 800px;
     padding: 30px;
@@ -57,6 +57,10 @@ body {
     
 }
 
+.divide {
+    background-color: black;
+}
+
 #mainh1 {
     padding-top: 0px;
     padding-bottom: 250px;
@@ -89,16 +93,22 @@ body {
     border-radius: 50%;
 }
 
+#logo {
+    z-index: 2;
+    height: inherit;
+}
+
 #navmenu {
-    background-color: black;
     margin: 0px;
-    padding: 40px;
-    font-family: "Lucida Console";
+    font-family: "Lucida Console", sans-serif;
+    height: inherit;
 }
 
 .navigation{
-    text-align: center;
-    z-index: 1;
+    text-align: right;
+    display: inline;
+    vertical-align: middle;
+    font-size: 24px;
 }
 
 .navigation li {
@@ -107,18 +117,39 @@ body {
 
 .navigation li a {
     display: inline-block;
-    padding: 10px;
+    padding: 0 30px 0;
     text-decoration: none;
     transition-property: all;
     transition-duration: .3s;
     transition-timing-function: linear;
 }
 
+@media screen and (max-width: 1200px) {
+    .navigation {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .navigation {
+        font-size: 18px;
+    }
+}
+
 .sticky {
     position: sticky;
     top: 0;
     width: 100%;
+    z-index: 2;
 }
+
+.header-stuff {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    line-height: 120px;
+}
+
 
 .tab:link {
     color: antiquewhite;
@@ -232,8 +263,8 @@ body {
 .row {
     display: flex;
     flex-wrap: wrap;
-    padding: 0px;
-    margin-top: 50px;
+    padding: 20px;
+    margin-top: 0px;
     margin-bottom: 50px;
 }
 
