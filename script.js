@@ -1,3 +1,3 @@
 window.onload = function () {
-    document.getElementById("fademe").style.opacity = 1;
+    document.querySelector("#fademe").style.opacity = 1;
 };

@@ -4,7 +4,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
     min-height: 800px;
     padding: 30px;
     margin: 0px;
@@ -54,7 +53,7 @@ body {
     font-size: 45px;
     text-align: center;
     letter-spacing: 20px;
-    
+    border: 2px solid white;
 }
 
 .divide {
