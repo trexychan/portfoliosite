@@ -7,7 +7,7 @@
     min-height: 800px;
     padding: 30px;
     margin: 0px;
-    filter: brightness(80%) saturate(90%) contrast(150%);
+    filter: brightness(80%) saturate(90%) contrast(120%);
     display: block;
     
 }
@@ -24,10 +24,6 @@
     margin-right: auto;
     height: 200px;
     filter: saturate(180%)
-}
-
-.padding {
-    padding: 300px;
 }
 
 .gallery {
@@ -72,6 +68,21 @@ body {
     margin-top: auto;
     margin-bottom: auto;
 }
+.bigtitle {
+    font-size: 40px;
+    font-family: "Lato", sans-serif;
+    margin: 70px;
+    color: white;
+    letter-spacing: 5px;
+    text-align: center;
+}
+#fade1 {
+    margin-left: -20%;
+}
+#fade3 {
+    margin-left: 20%;
+}
+
 
 .abouttxt {
     color: white;
@@ -191,14 +202,14 @@ body {
 }
 
 .imglink {
-    filter: brightness(80%) contrast(150%) saturate(120%);
+    filter: brightness(100%) contrast(100%) saturate(100%);
     transition: all .3s ease;
     object-fit: cover;
     padding: 10px;
 }
 
 .container:hover .imglink {
-    filter: brightness(50%) contrast(150%) saturate(120%) blur(4px);
+    filter: brightness(50%) contrast(150%) saturate(70%) blur(4px);
 }
 
 .middle {
@@ -366,7 +377,7 @@ body {
 .skillscontent {
     background: black;
     padding: 40px 20px 60px;
-    margin: 50px auto 50px;
+    margin: 0px auto 0px;
     max-width: 75%;
     display: block;
     text-align: center;
